@@ -1,0 +1,213 @@
+@media screen and (max-width:480px) {
+    body{
+        background-color: whitesmoke;
+    }
+    .navbar .nav{
+        display: inline-block;
+        text-decoration: none;
+        background-color: #625d5d;
+        padding-left:  8%;
+    }
+    .navbar #navigation{
+        margin: 2% 1% 0% -1%;
+        padding:1% 1% 1% 1%;
+        width:100%;
+        background-color: #625d5d;
+        
+    }
+    
+    .nav a{
+        text-decoration: none;
+        color:whitesmoke;
+       
+    }
+    .navbar .nav:hover{
+        transform: scale(1.2);
+    }
+    .navbar .nav a:hover{
+        color:gold;
+       text-shadow: 0 0 10px wheat;
+ 
+    }
+    .header{
+        margin:-1% 1% 1% -1%;
+        padding:1% 1% 1% 1%;
+        width:99.5%;
+        height:5vh;
+        border: 1px solid wheat;
+        background-image:linear-gradient(to right,limegreen,gold);
+    }
+    #logo{
+        margin:1.25vh 0vh 1% 1%;
+        width:10%;
+        height:2.5vh;
+       
+    }
+    
+    .title{
+        margin:-4vh 0 0 12%;
+    
+    }
+  
+    .title:hover,.title2:hover{
+        color:gold;
+        text-shadow: 0 0 2px black;
+        cursor: pointer;
+       
+    }
+   
+
+   .footer{
+    margin:0 0% 0% -1%;
+    padding-bottom: 1%;
+    width:102%;
+    background-color: rgb(54, 50, 50);
+    color:whitesmoke;
+    
+   }
+   .footer .title3{
+    color:gold;
+   }
+   .footer .ribbon{
+    height:1vh;
+    background-image:linear-gradient(to right,limegreen,gold);
+   }
+   .footer .social_media h3{
+    margin: 0% 0% 0% -5%;
+    padding: 0% 1% 0% 0%;     
+   }
+   .footer .social_media {
+    margin: 0% 0% 0% 45%;
+    text-decoration: none;
+    list-style: none;
+    
+    padding:1% 1% 1% 1%;
+   }
+   .footer .social_media a{
+    text-decoration: none;
+    color:limegreen;
+   }
+   .footer .company{
+    color:limegreen;
+   }
+    
+}
+@media screen and ((min-width:800px)and (max-width:1200px)){
+    body{
+        background-color: whitesmoke;
+    }
+    .header{
+        margin:-1% 1% 1% -1%;
+        padding:1% 1% 1% 1%;
+        width:99.5%;
+        height:20vh;
+        border: 1px solid wheat;
+        font-size: 1.5em;
+        background-image:linear-gradient(to right,limegreen,gold);
+        
+    }
+    #logo{
+        margin:2.5vh 0vh 1% 1%;
+        width:10%;
+        height:15vh;
+    }
+   
+    .title{
+        margin:-7% 0 0 12%;
+       
+        
+    }
+   
+    .title:hover,.title2:hover{
+    
+        color:gold;
+        text-shadow: 0 0 2px black;
+        cursor: pointer;
+       
+    }
+  
+   
+    nav{
+        margin:-2.9% 0 0 60%;
+    }
+    .navbar .nav{
+        display: inline-block;
+        text-decoration: none;
+        padding:1% 1% 1% 1%;
+    }
+    .navbar .nav:hover{
+        transform: scale(1.2);
+    }
+    .navbar .nav a:hover{
+        color:blue;
+       text-shadow: 0 0 10px wheat;
+ 
+    }
+    #headimage{
+        width:45%;
+        height:65vh;
+    }
+    .headline{
+        padding:0% 1% 1% 0%;
+        margin:-67vh 0 0 50%;
+        height:65vh; 
+        width:50%;
+      
+    }
+    .headline p{
+        height: 45vh;
+        overflow: hidden;
+    }
+    .nav a{
+        text-decoration: none;
+        color:white;
+       
+    }
+    .current_commit .slideshow{
+        width:50%;
+        border: 1px solid rgba(79, 79, 74, 0.933);
+        box-shadow: 0 0 10px black;
+        height:50vh;
+        
+    }
+    .current_commit .slideshow #slide{
+        width:100%;
+        height:50vh;
+    }
+   
+   .footer{
+    margin:0 0 0% -1%;
+    padding-bottom: 1%;
+    width:101.5%;
+    background-color: rgb(54, 50, 50);
+    color:whitesmoke;
+    
+   }
+   .footer .title3{
+    color:gold;
+   }
+   .footer .ribbon{
+    height:2vh;
+    background-image:linear-gradient(to right,limegreen,gold);
+   }
+   .footer .social_media h3{
+    margin: 0% 0% 0% -5%;
+    padding: 0% 1% 0% 0%;     
+   }
+   .footer .social_media {
+    margin: 0% 0% 0% 45%;
+    text-decoration: none;
+    list-style: none;
+    
+    padding:1% 1% 1% 1%;
+   }
+   .footer .social_media a{
+    text-decoration: none;
+    color:limegreen;
+   }
+   .footer .company{
+    color:limegreen;
+   }
+
+
+}

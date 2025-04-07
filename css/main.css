@@ -1,0 +1,19 @@
+:root{
+    --decorativeColor:rgb(255, 215, 0);
+    --glassColor:rgba(245, 208, 0, 0.713);
+    --decorativeColor2:rgb(218, 165, 32);
+    --txtColor:whitesmoke;
+    --themeColor:black;
+    --gradientColor1:rgb(255, 215, 0,0.762);
+    --gradientColor2:rgb(0, 0, 0,0.762);
+    --gradientColor2_hover_1:rgba(255, 217, 0, 0.365);
+    --gradient2_hover: linear-gradient(to right,var(--gradientColor2_hover_1), var(--themeColor),var(--gradientColor2_hover_1));
+    --gradientfooterColor_1:rgba(255, 217, 0, 0.071);
+    --gradient2Color:rgb(255, 217, 0, 0.071);
+    --gradient2:linear-gradient(to right,var(--gradient2Color),var(--themeColor));
+    --gradient:linear-gradient( var(--gradientColor1),var(--gradientColor2) );
+    --gradientdiv:linear-gradient(to right,var(--themeColor),rgba(255, 217, 0, 0.071));
+    --gradientfooter:linear-gradient(var(--gradientfooterColor_1),var(--themeColor),var(--themeColor));
+    --gradientfooter:linear-gradient(var(--gradientfooterColor_1),var(--themeColor),var(--themeColor));
+    --txtColor2:rgb(114, 112, 112);
+}

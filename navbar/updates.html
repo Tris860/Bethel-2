@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/icons/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Bethel ,Updates</title>
+</head>
+<body>
+    <section class="header">
+      <div class="image" id="image">
+        </div>
+      <div class="navbar" id="navbar">
+          <div class="logo" id="logo">
+            <div class="logo_image">
+                <img src="../media/icons/IMG-20240712-WA0019.jpg" alt="" srcset="">
+            </div>
+            <div class="logo_text">
+               <h2  class="text">B<span>E</span>TH<span>E</span>L</h2>
+            </div>
+            <div class="navtrigger">
+                <img src="../media/icons/navbar.png"  onclick="openNav()" alt="" srcset="">
+            </div>
+          </div>
+          <div id="navigation">
+             <nav>
+                <li class="head_bar"  >
+                    <center> <span onclick="closeNav()">&times;</span> Menubar</center>
+                </li>
+                <center>
+                  <li class="nav" ><a href="../index.html">Home</a></li>
+                  <li class="nav"><a href="service.html">Service</a></li>
+                  <li class="nav"><a href="gallery.html">Gallery</a></li>
+                  <li class="active"><a style="color:gold;" href="updates.html">Updates</a></li>
+                  <li class="nav"><a href="history.html">History</a></li>
+                  <li class="nav"><a  href="about.html">About us</a></li>
+                 </center>
+             </nav> 
+         </div>
+      </div>
+    </section>
+    
+    <section class="content">
+        <div class="searchbar">
+             <h2>Bethel latest Updates</h2>
+             <input type="text" name="search" onkeyup="searching()" id="inputbar" placeholder="Search....">
+        </div>
+        <div class="big_slide">
+         <div class="slideshow-container" >
+             <div id="slideshow-container">
+             </div>
+             <a class="prev" onclick="plusSlides(-1)">❮</a>
+             <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+
+           <br>
+
+          
+      </div>
+      <div class="stories" id="stories">
+        </div>
+    </section>
+
+    <section class="footer">
+     
+     <div class="nav_2">
+        <h3>Sections</h3>
+        <li class="nav"><a href="../index.html">Home</a></li>
+        <li class="nav"><a href="service.html">Service</a></li>
+        <li class="nav"><a href="gallery.html">Gallery</a></li>
+        <li class="nav"><a href="updates.html">Updates</a></li>
+        <li class="nav"><a href="history.html">History</a></li>
+        <li class="nav"><a href="about.html">About us</a></li>
+     </div> 
+    
+     <div class="contacts">
+        <h3>Contact us</h3>
+        <li><i></i>EmailBethelfamilychoir</li>
+        <li><i></i>IG:Bethelfamilychoir</li>
+        <li><i></i>Facebook:Bethelfamilychoir</li>
+        <li><i></i>Threads:Bethelfamilychoir</li>
+        <li><i></i>X:Bethelfamilychoir</li>
+        <li><i></i>tel:+25078000000000</li>
+     </div> 
+     <div class="copyrights">
+        <center><p class="copy"> &copy;copyrighted by <span class="title3">Bethel Family Choir</span>@2024</p></center>
+        <center><p>Developed by <span class="company">Tris</span> Incorportions</p></center>
+     </div>    
+    </section>
+   
+  <script src="../includes/bethel.js"></script>
+  <script src="../includes/server.js"></script>
+  <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+     }
+
+     function CurrentSlide(n) {
+       showSlides(slideIndex = n);
+     }
+     
+     function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+        }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+     }
+</script>
+  
+
+</body>
+
+</html>
