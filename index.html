@@ -86,10 +86,8 @@
             <div class="gallery_image">
                 <a href="navbar/gallery.html"><img src="media/cross1.jpg" alt="" srcset=""></a>
             </div>
-            <div class="gallery_image">
-                <a href="navbar/gallery.html"><img src="media/cross1.jpg" alt="" srcset=""></a>
-            </div>
           </div>
+          <button onclick="toggleShowViewer()" id="viewerBtn">View More</button>
         </div>
 
         <div class="services">
@@ -122,7 +120,29 @@
            </div>
         </div>
     </section>
-
+    <div class="image_viewer" id="image_viewer">
+        <div class="cancelbar">
+            <button id="closeViewer" onclick="toggleViewer()">&times;</button>
+            <h3 id="titleViewer">Image Viewer</h3>
+        </div>
+        <div id="slideshow-container">
+           <div class="slide active">
+              <img src="media/bible.jpg" alt="Image 1">
+           </div>
+           <div class="slide next">
+               <img src="media/img3.jpg" alt="Image 2">
+           </div>
+           <div class="slide next">
+               <img src="media/cross2.jpg" alt="Image 3">
+           </div>
+           <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full shadow-md focus:outline-none focus:shadow-outline">
+               ❮
+           </button>
+           <button id="next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-full shadow-md focus:outline-none focus:shadow-outline">
+               ❯
+            </button>
+        </div>
+    </div>
     <section class="footer">
      
      <div class="nav_2">
@@ -137,12 +157,12 @@
     
      <div class="contacts">
         <h3>Contact us</h3>
-        <li><i></i>EmailBethelfamilychoir</li>
-        <li><i></i>IG:Bethelfamilychoir</li>
-        <li><i></i>Facebook:Bethelfamilychoir</li>
-        <li><i></i>Threads:Bethelfamilychoir</li>
-        <li><i></i>X:Bethelfamilychoir</li>
-        <li><i></i>tel:+25078000000000</li>
+        <li><a href="https://youtube.com" class="fa fa-youtube"> Bethel BTV </a></li>
+        <li><a href="mailto:your-email@gmail.com" class="fa fa-envelope"> Bethelfamilychoir</a> </li>
+        <li><a href="https://instagram.com" class="fa fa-instagram">  Bethelfamilychoir</a> </li>
+        <li><a href="https://facebook.com" class="fa fa-facebook">  Bethelfamilychoir</a> </li>
+        <li><a href="https://twitter.com" class="fa fa-twitter">  Bethelfamilychoir</a> </li>
+        <li><a href="tel:+123456789" class="fa fa-phone">  +123456789</a></li>
      </div> 
      <div class="copyrights">
         <center><p class="copy"> &copy;copyrighted by <a href="#" style="text-decoration:none;"><span class="title3">Bethel Family Choir</span></a> Indatwa n' Inkesha @2024</p></center>
@@ -155,6 +175,43 @@
 <script>
  gallerySlideshow();
 </script>
+<script>
+    const SlideViewer = document.querySelectorAll('.slide');
+    const prevButton = document.getElementById('prev-btn');
+    const nextButton = document.getElementById('next-btn');
+    let currentSlideViewer = 0;
+
+    // Function to update the slideshow
+    function updateSlideViewerhow() {
+        SlideViewer.forEach(slide => {
+            slide.classList.remove('active', 'prev', 'next');
+        });
+
+        SlideViewer[currentSlideViewer].classList.add('active');
+
+        const nextSlide = (currentSlideViewer + 1) % SlideViewer.length;
+        SlideViewer[nextSlide].classList.add('next');
+
+        const prevSlide = (currentSlideViewer - 1 + SlideViewer.length) % SlideViewer.length;
+        SlideViewer[prevSlide].classList.add('prev');
+    }
+
+    // Event listeners for navigation buttons
+    prevButton.addEventListener('click', () => {
+        currentSlideViewer = (currentSlideViewer - 1 + SlideViewer.length) % SlideViewer.length;
+        updateSlideViewerhow();
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentSlideViewer = (currentSlideViewer + 1) % SlideViewer.length;
+        updateSlideViewerhow();
+    });
+
+    // Initial display setup
+    updateSlideViewerhow();
+    
+</script>
+<script src="includes/index.js"></script>
 </body>
 
 </html>
